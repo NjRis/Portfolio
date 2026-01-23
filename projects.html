@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Projets - Iris</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="cursor-dot"></div>
+    <div class="cursor-outline"></div>
+
+    <nav class="navbar" id="navbar">
+        <div class="logo">Iris.dev</div>
+        <div class="hamburger" id="hamburger">
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
+        <ul class="nav-links" id="navLinks">
+            <li><a href="index.html">Accueil</a></li>
+            <li><a href="projects.html" class="active">Projets</a></li>
+            <li><a href="skills.html">Compétences</a></li>
+            <li><a href="index.html#contact">Contact</a></li>
+        </ul>
+    </nav>
+
+    <section class="page-header">
+        <h1>Mes Projets</h1>
+        <p>Une sélection de mes réalisations en développement et DevOps</p>
+    </section>
+
+    <section class="projects-section">
+        <div class="projects-grid">
+            <div class="project-card featured">
+                <div class="project-badge">⭐ Projet Principal</div>
+                <div class="project-content">
+                    <h3>HomeLab DevOps</h3>
+                    <p class="project-date">Décembre 2025</p>
+                    <p>Création d'un HomeLab DevOps complet sur Windows WSL pour expérimenter la gestion d'infrastructures et le monitoring de services.</p>
+                    <ul class="project-features">
+                        <li>Services containerisés : PostgreSQL, Pi-hole, Grafana, Prometheus, Blackbox exporter, Speedtest exporter et Watchtower</li>
+                        <li>Monitoring et visualisation via dashboards Grafana pour CPU, RAM, uptime, disponibilité réseau et performances</li>
+                        <li>Automatisation des mises à jour avec Watchtower</li>
+                        <li>Alerting Telegram pour services critiques</li>
+                        <li>Sauvegarde automatique des bases de données</li>
+                        <li>Gestion sécurisée des secrets via .env</li>
+                    </ul>
+                    <div class="tech-tags">
+                        <span class="tech-tag">Docker</span>
+                        <span class="tech-tag">Docker Compose</span>
+                        <span class="tech-tag">Prometheus</span>
+                        <span class="tech-tag">Grafana</span>
+                        <span class="tech-tag">Ansible</span>
+                        <span class="tech-tag">WSL2</span>
+                        <span class="tech-tag">PostgreSQL</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="project-card">
+                <div class="project-content">
+                    <h3>Application Mobile - France Assos Santé</h3>
+                    <p>Application mobile permettant de réaliser des dons aux associations partenaires, avec un accès dédié aux administrateurs selon leur affiliation.</p>
+                    <ul class="project-features">
+                        <li>Système de dons sécurisé pour associations partenaires</li>
+                        <li>Interface d'administration avec gestion des droits</li>
+                        <li>Suivi des dons en temps réel</li>
+                        <li>Paramètres d'accessibilité (dyslexie, daltonisme, etc.)</li>
+                        <li>Conformité WCAG/RGAA</li>
+                    </ul>
+                    <div class="tech-tags">
+                        <span class="tech-tag">Angular</span>
+                        <span class="tech-tag">Spring Boot</span>
+                        <span class="tech-tag">API REST</span>
+                        <span class="tech-tag">Accessibilité</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="project-card">
+                <div class="project-content">
+                    <h3>Monitoring Stack (Prometheus & Grafana)</h3>
+                    <p>Mise en place d'une stack de monitoring complète avec Prometheus, Grafana et Node Exporter sous Docker.</p>
+                    <ul class="project-features">
+                        <li>Suivi en temps réel des métriques système (CPU, RAM, disque, réseau)</li>
+                        <li>Création de dashboards personnalisés</li>
+                        <li>Alerting automatique sur seuils critiques</li>
+                        <li>Containerisation complète de la stack</li>
+                    </ul>
+                    <div class="tech-tags">
+                        <span class="tech-tag">Prometheus</span>
+                        <span class="tech-tag">Grafana</span>
+                        <span class="tech-tag">Node Exporter</span>
+                        <span class="tech-tag">Docker</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="project-card">
+                <div class="project-content">
+                    <h3>Backup Manager (PowerShell)</h3>
+                    <p>Automatisation de sauvegardes Windows via PowerShell avec rotation et journalisation.</p>
+                    <ul class="project-features">
+                        <li>Sauvegardes compressées automatiques</li>
+                        <li>Rotation automatique des anciennes sauvegardes</li>
+                        <li>Journalisation détaillée des opérations</li>
+                        <li>Intégration au Planificateur de tâches Windows</li>
+                        <li>Exécution quotidienne fiable</li>
+                    </ul>
+                    <div class="tech-tags">
+                        <span class="tech-tag">PowerShell</span>
+                        <span class="tech-tag">Windows</span>
+                        <span class="tech-tag">Automatisation</span>
+                        <span class="tech-tag">Scripting</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="project-card">
+                <div class="project-content">
+                    <h3>Médiathèque Client-Serveur</h3>
+                    <p>Conception d'un système client-serveur pour réservations, emprunts et retours de documents.</p>
+                    <ul class="project-features">
+                        <li>Architecture client-serveur en Java</li>
+                        <li>Communication via Sockets TCP</li>
+                        <li>Multi-threading avec synchronisation</li>
+                        <li>Gestion complète des emprunts et réservations</li>
+                        <li>Interface utilisateur intuitive</li>
+                    </ul>
+                    <div class="tech-tags">
+                        <span class="tech-tag">Java</span>
+                        <span class="tech-tag">Sockets TCP</span>
+                        <span class="tech-tag">Multi-threading</span>
+                        <span class="tech-tag">MySQL</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="project-card">
+                <div class="project-content">
+                    <h3>Interfaces Web - GardeMaLicorne</h3>
+                    <p>Maintenance et création d'interfaces web professionnelles durant mon stage.</p>
+                    <ul class="project-features">
+                        <li>Intégration de maquettes responsive</li>
+                        <li>Utilisation de Symfony (Twig, Doctrine ORM)</li>
+                        <li>Développement front-end avec SCSS et JavaScript</li>
+                        <li>Travail en équipe avec Git</li>
+                        <li>Maintenance et évolution du code existant</li>
+                    </ul>
+                    <div class="tech-tags">
+                        <span class="tech-tag">Symfony</span>
+                        <span class="tech-tag">Twig</span>
+                        <span class="tech-tag">SCSS</span>
+                        <span class="tech-tag">JavaScript</span>
+                        <span class="tech-tag">Git</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <p>&copy; 2026 Iris. Développé avec passion pour l'innovation et la technologie.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
