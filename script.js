@@ -167,16 +167,8 @@ const stageAlert = document.getElementById('stageAlert');
 const closeAlert = document.getElementById('closeAlert');
 
 if (stageAlert && closeAlert) {
-    // Check if alert was previously closed
-    const alertClosed = sessionStorage.getItem('stageAlertClosed');
-    
-    if (alertClosed === 'true') {
-        stageAlert.style.display = 'none';
-    }
-
     closeAlert.addEventListener('click', () => {
         stageAlert.classList.add('hidden');
-        sessionStorage.setItem('stageAlertClosed', 'true');
         
         setTimeout(() => {
             stageAlert.style.display = 'none';
