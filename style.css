@@ -942,10 +942,11 @@ footer {
     }
 /* ALERTING */
     .stage-alert {
-        top: 65px;
-        width: 92%;
-        left: 4%;
-        transform: none;
+        top: 70px !important;
+        left: 50% !important;
+        transform: translateX(-50%) !important;
+        width: 94%;
+        max-width: 500px;
     }
 
     .stage-alert-content {
