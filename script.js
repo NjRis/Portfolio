@@ -159,3 +159,71 @@ style.textContent = `
     }
 `;
 document.head.appendChild(style);
+
+
+// ALERTING 
+// Stage alert animation and close functionality
+const stageAlert = document.getElementById('stageAlert');
+const closeAlert = document.getElementById('closeAlert');
+
+if (stageAlert && closeAlert) {
+    // Check if alert was previously closed
+    const alertClosed = sessionStorage.getItem('stageAlertClosed');
+    
+    if (alertClosed === 'true') {
+        stageAlert.style.display = 'none';
+    }
+
+    closeAlert.addEventListener('click', () => {
+        stageAlert.classList.add('hidden');
+        sessionStorage.setItem('stageAlertClosed', 'true');
+        
+        setTimeout(() => {
+            stageAlert.style.display = 'none';
+        }, 400);
+    });
+
+    // Add shake animation on scroll (to draw attention)
+    let lastScroll = 0;
+    let shakeTimeout;
+    
+    window.addEventListener('scroll', () => {
+        const currentScroll = window.pageYOffset;
+        
+        if (currentScroll > 100 && currentScroll > lastScroll && !alertClosed) {
+            clearTimeout(shakeTimeout);
+            
+            stageAlert.style.animation = 'none';
+            setTimeout(() => {
+                stageAlert.style.animation = 'shake 0.5s ease';
+            }, 10);
+            
+            shakeTimeout = setTimeout(() => {
+                stageAlert.style.animation = '';
+            }, 500);
+        }
+        
+        lastScroll = currentScroll;
+    });
+
+    // Add shake keyframe
+    const shakeStyle = document.createElement('style');
+    shakeStyle.textContent = `
+        @keyframes shake {
+            0%, 100% { transform: translateX(-50%) translateY(0); }
+            25% { transform: translateX(-50%) translateY(-5px); }
+            75% { transform: translateX(-50%) translateY(5px); }
+        }
+        
+        @media (max-width: 768px) {
+            @keyframes shake {
+                0%, 100% { transform: translateX(0) translateY(0); }
+                25% { transform: translateX(0) translateY(-5px); }
+                75% { transform: translateX(0) translateY(5px); }
+            }
+        }
+    `;
+    document.head.appendChild(shakeStyle);
+}
+
+// FIN ALERTING 
