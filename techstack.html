@@ -1,0 +1,300 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tech Stack - Iris</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="style-enhanced.css">
+    <link rel="icon" type="image/png" href="img/head_2.png">
+</head>
+<body>
+    <div class="cursor-dot"></div>
+    <div class="cursor-outline"></div>
+
+    <!-- Progress Indicator -->
+    <div class="scroll-progress"></div>
+
+    <!-- Command Palette -->
+    <div class="command-palette" id="commandPalette">
+        <div class="command-palette-content">
+            <input type="text" id="commandInput" placeholder="Tapez pour rechercher... (⌘K ou Ctrl+K)">
+            <div class="command-results" id="commandResults"></div>
+        </div>
+    </div>
+
+    <nav class="navbar" id="navbar">
+        <a href="index.html" class="logo">Iris.dev</a>
+        
+        <!-- Theme Toggle -->
+        <div class="theme-toggle" id="themeToggle">
+            <svg class="sun-icon" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor">
+                <circle cx="12" cy="12" r="5"></circle>
+                <line x1="12" y1="1" x2="12" y2="3"></line>
+                <line x1="12" y1="21" x2="12" y2="23"></line>
+                <line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line>
+                <line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line>
+                <line x1="1" y1="12" x2="3" y2="12"></line>
+                <line x1="21" y1="12" x2="23" y2="12"></line>
+                <line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line>
+                <line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line>
+            </svg>
+            <svg class="moon-icon" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor">
+                <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path>
+            </svg>
+        </div>
+
+        <div class="hamburger" id="hamburger">
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
+        <ul class="nav-links" id="navLinks">
+            <li><a href="index.html">Accueil</a></li>
+            <li><a href="projects.html">Projets</a></li>
+            <li><a href="skills.html">Compétences</a></li>
+            <li><a href="timeline.html">Parcours</a></li>
+            <li><a href="techstack.html" class="active">Tech Stack</a></li>
+            <li><a href="contact.html">Contact</a></li>
+        </ul>
+    </nav>
+
+    <section class="page-header">
+        <h1>Ma Tech Stack</h1>
+        <p>Technologies et outils que je maîtrise</p>
+    </section>
+
+    <section class="techstack-section">
+        <div class="techstack-grid">
+            <!-- Docker -->
+            <div class="tech-item" data-experience="3">
+                <div class="tech-icon-wrapper">
+                    <div class="tech-icon">🐳</div>
+                </div>
+                <h3>Docker</h3>
+                <div class="tech-experience">
+                    <div class="experience-bar">
+                        <div class="experience-fill" style="width: 75%"></div>
+                    </div>
+                    <span class="experience-years">3 ans</span>
+                </div>
+                <div class="tech-tooltip">
+                    <p>Containerisation d'applications</p>
+                    <span class="tech-level">Avancé</span>
+                </div>
+            </div>
+
+            <!-- Kubernetes -->
+            <div class="tech-item" data-experience="2">
+                <div class="tech-icon-wrapper">
+                    <div class="tech-icon">☸️</div>
+                </div>
+                <h3>Kubernetes</h3>
+                <div class="tech-experience">
+                    <div class="experience-bar">
+                        <div class="experience-fill" style="width: 70%"></div>
+                    </div>
+                    <span class="experience-years">1 an</span>
+                </div>
+                <div class="tech-tooltip">
+                    <p>Orchestration de containers</p>
+                    <span class="tech-level">Intermédiaire</span>
+                </div>
+            </div>
+
+            <!-- React/Angular -->
+            <div class="tech-item" data-experience="3">
+                <div class="tech-icon-wrapper">
+                    <div class="tech-icon">⚛️</div>
+                </div>
+                <h3>Angular</h3>
+                <div class="tech-experience">
+                    <div class="experience-bar">
+                        <div class="experience-fill" style="width: 65%"></div>
+                    </div>
+                    <span class="experience-years">1 an</span>
+                </div>
+                <div class="tech-tooltip">
+                    <p>Framework frontend moderne</p>
+                    <span class="tech-level">Avancé</span>
+                </div>
+            </div>
+
+            <!-- Java/Spring -->
+            <div class="tech-item" data-experience="4">
+                <div class="tech-icon-wrapper">
+                    <div class="tech-icon">☕</div>
+                </div>
+                <h3>Java/Spring</h3>
+                <div class="tech-experience">
+                    <div class="experience-bar">
+                        <div class="experience-fill" style="width: 85%"></div>
+                    </div>
+                    <span class="experience-years">4 ans</span>
+                </div>
+                <div class="tech-tooltip">
+                    <p>Développement backend</p>
+                    <span class="tech-level">Expert</span>
+                </div>
+            </div>
+
+            <!-- PostgreSQL -->
+            <div class="tech-item" data-experience="3">
+                <div class="tech-icon-wrapper">
+                    <div class="tech-icon">🐘</div>
+                </div>
+                <h3>PostgreSQL</h3>
+                <div class="tech-experience">
+                    <div class="experience-bar">
+                        <div class="experience-fill" style="width: 75%"></div>
+                    </div>
+                    <span class="experience-years">3 ans</span>
+                </div>
+                <div class="tech-tooltip">
+                    <p>Base de données relationnelle</p>
+                    <span class="tech-level">Avancé</span>
+                </div>
+            </div>
+
+            <!-- Git -->
+            <div class="tech-item" data-experience="4">
+                <div class="tech-icon-wrapper">
+                    <div class="tech-icon">🔀</div>
+                </div>
+                <h3>Git</h3>
+                <div class="tech-experience">
+                    <div class="experience-bar">
+                        <div class="experience-fill" style="width: 95%"></div>
+                    </div>
+                    <span class="experience-years">4 ans</span>
+                </div>
+                <div class="tech-tooltip">
+                    <p>Gestion de versions</p>
+                    <span class="tech-level">Expert</span>
+                </div>
+            </div>
+
+            <!-- Prometheus -->
+            <div class="tech-item" data-experience="2">
+                <div class="tech-icon-wrapper">
+                    <div class="tech-icon">📊</div>
+                </div>
+                <h3>Prometheus</h3>
+                <div class="tech-experience">
+                    <div class="experience-bar">
+                        <div class="experience-fill" style="width: 65%"></div>
+                    </div>
+                    <span class="experience-years">8 mois</span>
+                </div>
+                <div class="tech-tooltip">
+                    <p>Monitoring & métriques</p>
+                    <span class="tech-level">Intermédiaire</span>
+                </div>
+            </div>
+
+            <!-- Grafana -->
+            <div class="tech-item" data-experience="2">
+                <div class="tech-icon-wrapper">
+                    <div class="tech-icon">📈</div>
+                </div>
+                <h3>Grafana</h3>
+                <div class="tech-experience">
+                    <div class="experience-bar">
+                        <div class="experience-fill" style="width: 65%"></div>
+                    </div>
+                    <span class="experience-years">8 mois</span>
+                </div>
+                <div class="tech-tooltip">
+                    <p>Visualisation de données</p>
+                    <span class="tech-level">Avancé</span>
+                </div>
+            </div>
+
+            <!-- Python -->
+            <div class="tech-item" data-experience="3">
+                <div class="tech-icon-wrapper">
+                    <div class="tech-icon">🐍</div>
+                </div>
+                <h3>Python</h3>
+                <div class="tech-experience">
+                    <div class="experience-bar">
+                        <div class="experience-fill" style="width: 80%"></div>
+                    </div>
+                    <span class="experience-years">3 ans</span>
+                </div>
+                <div class="tech-tooltip">
+                    <p>Scripting & automation</p>
+                    <span class="tech-level">Avancé</span>
+                </div>
+            </div>
+
+            <!-- Linux -->
+            <div class="tech-item" data-experience="3">
+                <div class="tech-icon-wrapper">
+                    <div class="tech-icon">🐧</div>
+                </div>
+                <h3>Linux</h3>
+                <div class="tech-experience">
+                    <div class="experience-bar">
+                        <div class="experience-fill" style="width: 85%"></div>
+                    </div>
+                    <span class="experience-years">3 ans</span>
+                </div>
+                <div class="tech-tooltip">
+                    <p>Administration système</p>
+                    <span class="tech-level">Avancé</span>
+                </div>
+            </div>
+
+            <!-- Ansible -->
+            <div class="tech-item" data-experience="2">
+                <div class="tech-icon-wrapper">
+                    <div class="tech-icon">🔧</div>
+                </div>
+                <h3>Ansible</h3>
+                <div class="tech-experience">
+                    <div class="experience-bar">
+                        <div class="experience-fill" style="width: 65%"></div>
+                    </div>
+                    <span class="experience-years">8 mois</span>
+                </div>
+                <div class="tech-tooltip">
+                    <p>Automatisation IT</p>
+                    <span class="tech-level">Intermédiaire</span>
+                </div>
+            </div>
+
+            <!-- MongoDB -->
+            <div class="tech-item" data-experience="2">
+                <div class="tech-icon-wrapper">
+                    <div class="tech-icon">🍃</div>
+                </div>
+                <h3>MongoDB</h3>
+                <div class="tech-experience">
+                    <div class="experience-bar">
+                        <div class="experience-fill" style="width: 70%"></div>
+                    </div>
+                    <span class="experience-years">2 ans</span>
+                </div>
+                <div class="tech-tooltip">
+                    <p>Base de données NoSQL</p>
+                    <span class="tech-level">Intermédiaire</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="footer-content">
+            <p>&copy; 2026 Iris NJIKAM. Développé avec passion pour l'innovation et la technologie.</p>
+            <div class="version-badge" id="versionBadge">
+                <span class="version-icon">🔄</span>
+                <span class="version-text">v2.1.0</span>
+                <span class="version-date">Dernière mise à jour : 25 Jan 2026</span>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

@@ -5,14 +5,42 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Accueil</title>
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="css/style-enhanced.css">
     <link rel="icon" type="image/png" href="img/head_2.png">
 </head>
 <body>
+    <!-- Progress Indicator -->
+    <div class="scroll-progress"></div>
+
+<!-- Command Palette -->
+    <div class="command-palette" id="commandPalette">
+        <div class="command-palette-content">
+            <input type="text" id="commandInput" placeholder="Tapez pour rechercher... (⌘K ou Ctrl+K)">
+            <div class="command-results" id="commandResults"></div>
+        </div>
+    </div>
     <div class="cursor-dot"></div>
     <div class="cursor-outline"></div>
 
     <nav class="navbar" id="navbar">
         <a href="index.html" class="logo">Iris.dev</a>
+        <!-- Theme Toggle -->
+    <div class="theme-toggle" id="themeToggle">
+        <svg class="sun-icon" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor">
+        <circle cx="12" cy="12" r="5"></circle>
+        <line x1="12" y1="1" x2="12" y2="3"></line>
+        <line x1="12" y1="21" x2="12" y2="23"></line>
+        <line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line>
+        <line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line>
+        <line x1="1" y1="12" x2="3" y2="12"></line>
+        <line x1="21" y1="12" x2="23" y2="12"></line>
+        <line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line>
+        <line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line>
+        </svg>
+            <svg class="moon-icon" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor">
+                <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path>
+            </svg>
+    </div>
         <div class="hamburger" id="hamburger">
             <span></span>
             <span></span>
@@ -22,14 +50,16 @@
             <li><a href="index.html">Accueil</a></li>
             <li><a href="projects.html">Projets</a></li>
             <li><a href="skills.html">Compétences</a></li>
-            <li><a href="#contact">Contact</a></li>
+            <li><a href="timeline.html">Parcours</a></li>
+            <li><a href="techstack.html">Tech Stack</a></li>
+            <li><a href="contact.html">Contact</a></li>
         </ul>
     </nav>
 
     <!--ALERTING-->
     <div class="stage-alert" id="stageAlert">
         <div class="stage-alert-content">
-            <span class="alert-icon">🎓</span>
+            <span class="alert-icon">ℹ️</span>
             <div class="alert-text">
                 <strong>Recherche de stage</strong>
                 <p>5-6 mois · Réseaux & Systèmes · Février 2026</p>
@@ -123,8 +153,15 @@
     </section>
 
     <footer>
+    <div class="footer-content">
         <p>&copy; 2026 Iris NJIKAM. Développé avec passion pour l'innovation et la technologie.</p>
-    </footer>
+        <div class="version-badge" id="versionBadge">
+            <span class="version-icon">🔄</span>
+            <span class="version-text">v2.1.0</span>
+            <span class="version-date">Dernière mise à jour : 24 Jan 2026</span>
+        </div>
+    </div>
+</footer>
 
     <script src="script.js"></script>
 </body>

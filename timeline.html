@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Parcours - Iris</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="style-enhanced.css">
+    <link rel="icon" type="image/png" href="img/head_2.png">
+</head>
+<body>
+    <div class="cursor-dot"></div>
+    <div class="cursor-outline"></div>
+
+    <!-- Progress Indicator -->
+    <div class="scroll-progress"></div>
+
+    <!-- Command Palette -->
+    <div class="command-palette" id="commandPalette">
+        <div class="command-palette-content">
+            <input type="text" id="commandInput" placeholder="Tapez pour rechercher... (⌘K ou Ctrl+K)">
+            <div class="command-results" id="commandResults"></div>
+        </div>
+    </div>
+
+    <nav class="navbar" id="navbar">
+        <a href="index.html" class="logo">Iris.dev</a>
+        
+        <!-- Theme Toggle -->
+        <div class="theme-toggle" id="themeToggle">
+            <svg class="sun-icon" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor">
+                <circle cx="12" cy="12" r="5"></circle>
+                <line x1="12" y1="1" x2="12" y2="3"></line>
+                <line x1="12" y1="21" x2="12" y2="23"></line>
+                <line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line>
+                <line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line>
+                <line x1="1" y1="12" x2="3" y2="12"></line>
+                <line x1="21" y1="12" x2="23" y2="12"></line>
+                <line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line>
+                <line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line>
+            </svg>
+            <svg class="moon-icon" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor">
+                <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path>
+            </svg>
+        </div>
+
+        <div class="hamburger" id="hamburger">
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
+        <ul class="nav-links" id="navLinks">
+            <li><a href="index.html">Accueil</a></li>
+            <li><a href="projects.html">Projets</a></li>
+            <li><a href="skills.html">Compétences</a></li>
+            <li><a href="timeline.html" class="active">Parcours</a></li>
+            <li><a href="techstack.html">Tech Stack</a></li>
+            <li><a href="index.html#contact">Contact</a></li>
+        </ul>
+    </nav>
+
+    <!--ALERTING-->
+    <div class="stage-alert" id="stageAlert">
+        <div class="stage-alert-content">
+            <span class="alert-icon">🎓</span>
+            <div class="alert-text">
+                <strong>Recherche de stage</strong>
+                <p>5-6 mois · Réseaux & Systèmes · Février 2026</p>
+            </div>
+        </div>
+        <button class="alert-close" id="closeAlert">&times;</button>
+    </div>
+    <!--FIN ALERTING-->
+
+    <section class="page-header">
+        <h1>Mon Parcours</h1>
+        <p>Une timeline interactive de mon évolution académique et professionnelle</p>
+    </section>
+
+    <section class="timeline-section">
+        <div class="timeline-container">
+            <!-- Timeline Item 1 -->
+            <div class="timeline-item" data-year="2019">
+                <div class="timeline-dot"></div>
+                <div class="timeline-content">
+                    <div class="timeline-year">2019</div>
+                    <h3>🎓 Bac STMG</h3>
+                    <h4>Option Finance</h4>
+                    <p>Lycée - Mention Bien</p>
+                    <div class="timeline-period">2019 - 2022</div>
+                    <div class="timeline-tags">
+                        <span class="timeline-tag">Gestion</span>
+                        <span class="timeline-tag">Finance</span>
+                        <span class="timeline-tag">Management</span>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Timeline Item 2 -->
+            <div class="timeline-item" data-year="2022">
+                <div class="timeline-dot"></div>
+                <div class="timeline-content">
+                    <div class="timeline-year">2022</div>
+                    <h3>💻 BUT Informatique</h3>
+                    <h4>Formation en cours</h4>
+                    <p>Spécialisation Développement Web & Infrastructure DevOps</p>
+                    <div class="timeline-period">2022 - 2026</div>
+                    <div class="timeline-tags">
+                        <span class="timeline-tag">Développement</span>
+                        <span class="timeline-tag">DevOps</span>
+                        <span class="timeline-tag">Cloud</span>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Timeline Item 3 -->
+            <div class="timeline-item" data-year="2025">
+                <div class="timeline-dot"></div>
+                <div class="timeline-content">
+                    <div class="timeline-year">2025</div>
+                    <h3>🚀 Stage Développeuse FullStack</h3>
+                    <h4>GardeMaLicorne - Tallard, France</h4>
+                    <p>Maintenance et création d'interfaces web, intégration de maquettes, utilisation de Symfony (Twig, Doctrine ORM), SCSS et JavaScript</p>
+                    <div class="timeline-period">Avril 2025 - Juin 2025</div>
+                    <div class="timeline-tags">
+                        <span class="timeline-tag">Symfony</span>
+                        <span class="timeline-tag">SCSS</span>
+                        <span class="timeline-tag">JavaScript</span>
+                        <span class="timeline-tag">Git</span>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Timeline Item 4 -->
+            <div class="timeline-item future" data-year="2026">
+                <div class="timeline-dot"></div>
+                <div class="timeline-content">
+                    <div class="timeline-year">2026</div>
+                    <h3>🎯 Stage à venir</h3>
+                    <h4>Réseaux & Systèmes</h4>
+                    <p>Recherche active d'un stage de 5-6 mois dans le domaine des Réseaux et Systèmes pour approfondir mes compétences en infrastructure</p>
+                    <div class="timeline-period">Février 2026 - Juillet 2026</div>
+                    <div class="timeline-tags">
+                        <span class="timeline-tag">Réseaux</span>
+                        <span class="timeline-tag">Systèmes</span>
+                        <span class="timeline-tag">Infrastructure</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+
+    <footer>
+        <div class="footer-content">
+            <p>&copy; 2026 Iris NJIKAM. Développé avec passion pour l'innovation et la technologie.</p>
+            <div class="version-badge" id="versionBadge">
+                <span class="version-icon">🔄</span>
+                <span class="version-text">v2.1.0</span>
+                <span class="version-date">Dernière mise à jour : 25 Jan 2026</span>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

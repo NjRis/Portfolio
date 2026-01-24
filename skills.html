@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Compétences - Iris</title>
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="style-enhanced.css">
     <link rel="icon" type="image/png" href="img/head_2.png">
 </head>
 <body>
@@ -13,6 +14,7 @@
 
     <nav class="navbar" id="navbar">
         <a href="index.html" class="logo">Iris.dev</a>
+        
         <div class="hamburger" id="hamburger">
             <span></span>
             <span></span>
@@ -21,21 +23,27 @@
         <ul class="nav-links" id="navLinks">
             <li><a href="index.html">Accueil</a></li>
             <li><a href="projects.html">Projets</a></li>
-            <li><a href="skills.html" class="active">Compétences</a></li>
-            <li><a href="index.html#contact">Contact</a></li>
+            <li><a href="skills.html">Compétences</a></li>
+            <li><a href="timeline.html">Parcours</a></li>
+            <li><a href="techstack.html">Tech Stack</a></li>
+            <li><a href="contact.html">Contact</a></li>
         </ul>
     </nav>
 <!--ALERTING-->
-    <div class="stage-alert" id="stageAlert">
-        <div class="stage-alert-content">
-            <span class="alert-icon">🎓</span>
-            <div class="alert-text">
-                <strong>Recherche de stage</strong>
-                <p>5-6 mois · Réseaux & Systèmes · Février 2026</p>
+<div class="stage-alert" id="stageAlert">
+    <div class="stage-alert-content">
+        <div class="alert-scrolling">
+            <div class="alert-item">
+                <span class="alert-icon">🎓</span>
+                <div class="alert-text">
+                    <strong>Recherche de stage</strong>
+                    <span>5-6 mois · Réseaux & Systèmes · Février 2026</span>
+                </div>
             </div>
         </div>
         <button class="alert-close" id="closeAlert">&times;</button>
     </div>
+</div>
 <!--FIN ALERTING-->
     <section class="page-header">
         <h1>Compétences Techniques</h1>
@@ -147,8 +155,15 @@
     </section>
 
     <footer>
+    <div class="footer-content">
         <p>&copy; 2026 Iris NJIKAM. Développé avec passion pour l'innovation et la technologie.</p>
-    </footer>
+        <div class="version-badge" id="versionBadge">
+            <span class="version-icon">🔄</span>
+            <span class="version-text">v2.1.0</span>
+            <span class="version-date">Dernière mise à jour : 24 Jan 2026</span>
+        </div>
+    </div>
+</footer>
 
     <script src="script.js"></script>
 </body>
