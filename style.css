@@ -876,6 +876,16 @@ body {
     }
 }
 
+/* ========================================
+   LOGO CONTAINER
+   ======================================== */
+
+.logo-container {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+
 .logo {
     font-size: 1.5rem;
     font-weight: 600;
@@ -899,6 +909,7 @@ body {
 .logo:hover::after {
     width: 100%;
 }
+
 
 .nav-links {
     display: flex;
@@ -1615,7 +1626,7 @@ footer {
 .hamburger span {
     width: 25px;
     height: 3px;
-    background: #ffffff;
+    background: var(--text-primary);
     transition: all 0.3s;
     border-radius: 2px;
 }
@@ -1938,6 +1949,13 @@ footer {
     border-bottom: 1px solid var(--border);
 }
 
+/* Logo Container en responsive */
+.logo-container {
+        display: flex;
+        align-items: center;
+        gap: 0.5rem; /* Gap réduit sur mobile */
+}
+
 .logo {
     color: var(--text-primary);
 }
@@ -2193,6 +2211,11 @@ a:focus-visible {
     
     .hamburger {
         display: flex;
+        z-index: 1001;
+    }
+
+    .hamburger span {
+        background: var(--text-primary);
     }
 
     .nav-links {

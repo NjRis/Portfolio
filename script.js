@@ -200,11 +200,13 @@ const navLinks = document.getElementById('navLinks');
 
 hamburger?.addEventListener('click', () => {
     navLinks?.classList.toggle('active');
+    hamburger.classList.toggle('active'); // ← AJOUTER CETTE LIGNE
 });
 
 document.querySelectorAll('.nav-links a').forEach(link => {
     link.addEventListener('click', () => {
         navLinks?.classList.remove('active');
+        hamburger?.classList.remove('active'); // ← AJOUTER AUSSI CETTE LIGNE (optionnel mais recommandé)
     });
 });
 

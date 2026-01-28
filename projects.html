@@ -13,8 +13,26 @@
     <div class="cursor-outline"></div>
 
     <nav class="navbar" id="navbar">
+        <div class="logo-container">
         <a href="index.html" class="logo">Iris.dev</a>
-        
+        <!-- Theme Toggle -->
+            <div class="theme-toggle" id="themeToggle">
+                <svg class="sun-icon" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor">
+                    <circle cx="12" cy="12" r="5"></circle>
+                    <line x1="12" y1="1" x2="12" y2="3"></line>
+                    <line x1="12" y1="21" x2="12" y2="23"></line>
+                    <line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line>
+                    <line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line>
+                    <line x1="1" y1="12" x2="3" y2="12"></line>
+                    <line x1="21" y1="12" x2="23" y2="12"></line>
+                    <line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line>
+                    <line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line>
+                </svg>
+                <svg class="moon-icon" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor">
+                    <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path>
+                </svg>
+            </div>
+        </div>
         <div class="hamburger" id="hamburger">
             <span></span>
             <span></span>
@@ -22,7 +40,8 @@
         </div>
         <ul class="nav-links" id="navLinks">
             <li><a href="index.html">Accueil</a></li>
-            <li><a href="projects.html">Projets</a></li>
+            <li><a href="about.html">A propos de moi</a></li>
+            <li><a href="projects.html" class="active">Projets</a></li>
             <li><a href="skills.html">Compétences</a></li>
             <li><a href="timeline.html">Parcours</a></li>
             <li><a href="techstack.html">Tech Stack</a></li>

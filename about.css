@@ -1,0 +1,804 @@
+/* ========================================
+   PAGE ABOUT - STYLES SPÉCIFIQUES
+   ======================================== */
+
+/* ========================================
+   INTRODUCTION SECTION
+   ======================================== */
+
+.about-intro-section {
+    padding: 4rem 5%;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.about-intro-container {
+    display: grid;
+    grid-template-columns: 1fr 1.5fr;
+    gap: 3rem;
+    align-items: center;
+}
+
+.about-intro-image {
+    position: relative;
+}
+
+.about-profile-img {
+    width: 100%;
+    max-width: 350px;
+    height: auto;
+    border-radius: 20px;
+    box-shadow: 0 20px 60px rgba(74, 158, 255, 0.2);
+    position: relative;
+    z-index: 2;
+    transition: transform 0.3s ease;
+}
+
+.about-profile-img:hover {
+    transform: scale(1.02) translateY(-5px);
+}
+
+.about-image-decoration {
+    position: absolute;
+    top: -20px;
+    left: -20px;
+    width: 100%;
+    height: 100%;
+    border: 3px solid var(--accent);
+    border-radius: 20px;
+    z-index: 1;
+    transition: all 0.3s ease;
+}
+
+.about-intro-image:hover .about-image-decoration {
+    top: -25px;
+    left: -25px;
+}
+
+.about-intro-text h2 {
+    color: var(--text-primary);
+    font-size: 2.5rem;
+    margin-bottom: 1.5rem;
+    font-weight: 700;
+}
+
+.about-intro-text p {
+    color: var(--text-tertiary);
+    font-size: 1.1rem;
+    line-height: 1.8;
+    margin-bottom: 1.5rem;
+}
+
+.about-stats {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 2rem;
+    margin-top: 2.5rem;
+}
+
+.stat-item {
+    text-align: center;
+    padding: 1.5rem;
+    background: var(--card-bg);
+    backdrop-filter: blur(10px);
+    border: 1px solid var(--border);
+    border-radius: 12px;
+    transition: all 0.3s ease;
+}
+
+.stat-item:hover {
+    transform: translateY(-5px);
+    border-color: var(--accent);
+    background: var(--card-hover);
+    box-shadow: 0 8px 25px rgba(74, 158, 255, 0.15);
+}
+
+.stat-number {
+    display: block;
+    font-size: 2.5rem;
+    font-weight: 700;
+    color: var(--accent);
+    margin-bottom: 0.5rem;
+}
+
+.stat-label {
+    display: block;
+    color: var(--text-tertiary);
+    font-size: 0.95rem;
+}
+
+/* ========================================
+   PASSION SECTION
+   ======================================== */
+
+.about-passion-section {
+    padding: 4rem 5%;
+    max-width: 1200px;
+    margin: 0 auto;
+    background: var(--bg-tertiary);
+    border-radius: 20px;
+}
+
+.passion-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 2rem;
+    margin-top: 2rem;
+}
+
+.passion-card {
+    background: var(--card-bg);
+    backdrop-filter: blur(10px);
+    border: 1px solid var(--border);
+    border-radius: 12px;
+    padding: 2rem;
+    transition: all 0.3s ease;
+    position: relative;
+    overflow: hidden;
+}
+
+.passion-card::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: -100%;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(90deg, transparent, rgba(74, 158, 255, 0.1), transparent);
+    transition: left 0.5s ease;
+}
+
+.passion-card:hover::before {
+    left: 100%;
+}
+
+.passion-card:hover {
+    transform: translateY(-10px);
+    border-color: var(--accent);
+    background: var(--card-hover);
+    box-shadow: 0 12px 40px rgba(74, 158, 255, 0.2);
+}
+
+.passion-icon {
+    font-size: 3rem;
+    margin-bottom: 1rem;
+    display: block;
+}
+
+.passion-card h3 {
+    color: var(--text-primary);
+    font-size: 1.4rem;
+    margin-bottom: 1rem;
+    font-weight: 600;
+}
+
+.passion-card p {
+    color: var(--text-tertiary);
+    line-height: 1.7;
+    font-size: 1rem;
+}
+
+/* ========================================
+   VALUES SECTION
+   ======================================== */
+
+.about-values-section {
+    padding: 4rem 5%;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.values-container {
+    display: grid;
+    grid-template-columns: 1fr 1.5fr;
+    gap: 3rem;
+    align-items: center;
+}
+
+.values-image {
+    position: relative;
+}
+
+.values-profile-img {
+    width: 100%;
+    max-width: 350px;
+    height: auto;
+    border-radius: 20px;
+    box-shadow: 0 20px 60px rgba(74, 158, 255, 0.2);
+    transition: transform 0.3s ease;
+}
+
+.values-profile-img:hover {
+    transform: scale(1.02) translateY(-5px);
+}
+
+.values-list {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+}
+
+.value-item {
+    display: flex;
+    gap: 1.5rem;
+    padding: 1.5rem;
+    background: var(--card-bg);
+    backdrop-filter: blur(10px);
+    border: 1px solid var(--border);
+    border-radius: 12px;
+    transition: all 0.3s ease;
+}
+
+.value-item:hover {
+    transform: translateX(10px);
+    border-color: var(--accent);
+    background: var(--card-hover);
+    box-shadow: 0 8px 25px rgba(74, 158, 255, 0.15);
+}
+
+.value-icon {
+    font-size: 2.5rem;
+    flex-shrink: 0;
+}
+
+.value-text h3 {
+    color: var(--text-primary);
+    font-size: 1.2rem;
+    margin-bottom: 0.5rem;
+    font-weight: 600;
+}
+
+.value-text p {
+    color: var(--text-tertiary);
+    line-height: 1.6;
+    font-size: 0.95rem;
+}
+
+/* ========================================
+   JOURNEY SECTION
+   ======================================== */
+
+.about-journey-section {
+    padding: 4rem 5%;
+    max-width: 1200px;
+    margin: 0 auto;
+    background: var(--bg-tertiary);
+    border-radius: 20px;
+}
+
+.journey-content {
+    display: grid;
+    grid-template-columns: 1.5fr 1fr;
+    gap: 3rem;
+    align-items: start;
+    margin-top: 2rem;
+}
+
+.journey-text p {
+    color: var(--text-tertiary);
+    font-size: 1.05rem;
+    line-height: 1.8;
+    margin-bottom: 1.5rem;
+}
+
+.journey-image {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+}
+
+.journey-profile-img {
+    width: 100%;
+    max-width: 300px;
+    height: auto;
+    border-radius: 20px;
+    box-shadow: 0 20px 60px rgba(74, 158, 255, 0.2);
+    transition: transform 0.3s ease;
+}
+
+.journey-profile-img:hover {
+    transform: scale(1.02) rotate(2deg);
+}
+
+.journey-quote {
+    background: var(--card-bg);
+    backdrop-filter: blur(10px);
+    border: 1px solid var(--border);
+    border-left: 4px solid var(--accent);
+    border-radius: 12px;
+    padding: 1.5rem;
+    position: relative;
+}
+
+.journey-quote::before {
+    content: '"';
+    position: absolute;
+    top: -10px;
+    left: 15px;
+    font-size: 4rem;
+    color: var(--accent);
+    opacity: 0.3;
+    font-family: Georgia, serif;
+}
+
+.journey-quote p {
+    color: var(--text-primary);
+    font-size: 1.1rem;
+    font-style: italic;
+    line-height: 1.6;
+    margin: 0;
+    position: relative;
+    z-index: 1;
+}
+
+/* ========================================
+   HOBBIES SECTION
+   ======================================== */
+
+.about-hobbies-section {
+    padding: 4rem 5%;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.hobbies-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 2rem;
+    margin-top: 2rem;
+}
+
+.hobby-card {
+    background: var(--card-bg);
+    backdrop-filter: blur(10px);
+    border: 1px solid var(--border);
+    border-radius: 12px;
+    padding: 2rem;
+    text-align: center;
+    transition: all 0.3s ease;
+    position: relative;
+    overflow: hidden;
+}
+
+.hobby-card::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 3px;
+    background: linear-gradient(90deg, var(--accent), #3b7acc);
+    transform: scaleX(0);
+    transform-origin: left;
+    transition: transform 0.3s ease;
+}
+
+.hobby-card:hover::after {
+    transform: scaleX(1);
+}
+
+.hobby-card:hover {
+    transform: translateY(-10px);
+    border-color: var(--accent);
+    background: var(--card-hover);
+    box-shadow: 0 12px 40px rgba(74, 158, 255, 0.2);
+}
+
+.hobby-emoji {
+    font-size: 3.5rem;
+    margin-bottom: 1rem;
+    display: block;
+    transition: transform 0.3s ease;
+}
+
+.hobby-card:hover .hobby-emoji {
+    transform: scale(1.2) rotate(10deg);
+}
+
+.hobby-card h3 {
+    color: var(--text-primary);
+    font-size: 1.3rem;
+    margin-bottom: 0.8rem;
+    font-weight: 600;
+}
+
+.hobby-card p {
+    color: var(--text-tertiary);
+    line-height: 1.6;
+    font-size: 0.95rem;
+}
+
+/* ========================================
+   CTA SECTION
+   ======================================== */
+
+.about-cta-section {
+    padding: 4rem 5%;
+    max-width: 800px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.about-cta-content {
+    background: linear-gradient(135deg, rgba(74, 158, 255, 0.1), rgba(59, 122, 204, 0.05));
+    backdrop-filter: blur(10px);
+    border: 2px solid var(--accent);
+    border-radius: 20px;
+    padding: 3rem 2rem;
+}
+
+.about-cta-content h2 {
+    color: var(--text-primary);
+    font-size: 2.5rem;
+    margin-bottom: 1rem;
+    font-weight: 700;
+}
+
+.about-cta-content p {
+    color: var(--text-tertiary);
+    font-size: 1.2rem;
+    margin-bottom: 2rem;
+    line-height: 1.6;
+}
+
+.cta-buttons {
+    display: flex;
+    gap: 1.5rem;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+/* ========================================
+   LOGO CONTAINER
+   ======================================== */
+
+.logo-container {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+
+/* ========================================
+   ANIMATIONS
+   ======================================== */
+
+@keyframes fadeInUp {
+    from {
+        opacity: 0;
+        transform: translateY(30px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes slideInLeft {
+    from {
+        opacity: 0;
+        transform: translateX(-30px);
+    }
+    to {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+.about-intro-section,
+.about-passion-section,
+.about-values-section,
+.about-journey-section,
+.about-hobbies-section,
+.about-cta-section {
+    animation: fadeInUp 0.8s ease-out;
+}
+
+/* ========================================
+   RESPONSIVE - TABLETTES
+   ======================================== */
+
+@media (max-width: 1024px) {
+    .about-intro-container,
+    .values-container {
+        grid-template-columns: 1fr;
+        gap: 2rem;
+    }
+
+    .about-intro-image,
+    .values-image {
+        text-align: center;
+    }
+
+    .about-profile-img,
+    .values-profile-img {
+        max-width: 300px;
+    }
+
+    .journey-content {
+        grid-template-columns: 1fr;
+        gap: 2rem;
+    }
+
+    .journey-image {
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+        gap: 2rem;
+    }
+
+    .journey-profile-img {
+        max-width: 250px;
+    }
+}
+
+/* ========================================
+   RESPONSIVE - MOBILE
+   ======================================== */
+
+@media (max-width: 768px) {
+    .about-intro-section,
+    .about-passion-section,
+    .about-values-section,
+    .about-journey-section,
+    .about-hobbies-section,
+    .about-cta-section {
+        padding: 3rem 5%;
+    }
+
+    .about-intro-text h2 {
+        font-size: 2rem;
+    }
+
+    .about-intro-text p {
+        font-size: 1rem;
+    }
+
+    .about-stats {
+        grid-template-columns: 1fr;
+        gap: 1rem;
+    }
+
+    .stat-number {
+        font-size: 2rem;
+    }
+
+    .passion-grid {
+        grid-template-columns: 1fr;
+        gap: 1.5rem;
+    }
+
+    .passion-card {
+        padding: 1.5rem;
+    }
+
+    .passion-icon {
+        font-size: 2.5rem;
+    }
+
+    .passion-card h3 {
+        font-size: 1.2rem;
+    }
+
+    .values-list {
+        gap: 1rem;
+    }
+
+    .value-item {
+        padding: 1rem;
+        gap: 1rem;
+    }
+
+    .value-icon {
+        font-size: 2rem;
+    }
+
+    .value-text h3 {
+        font-size: 1.1rem;
+    }
+
+    .journey-text p {
+        font-size: 1rem;
+    }
+
+    .journey-image {
+        flex-direction: column;
+    }
+
+    .journey-profile-img {
+        max-width: 200px;
+    }
+
+    .journey-quote {
+        padding: 1rem;
+    }
+
+    .journey-quote p {
+        font-size: 1rem;
+    }
+
+    .hobbies-grid {
+        grid-template-columns: 1fr;
+        gap: 1.5rem;
+    }
+
+    .hobby-card {
+        padding: 1.5rem;
+    }
+
+    .hobby-emoji {
+        font-size: 3rem;
+    }
+
+    .about-cta-content {
+        padding: 2rem 1.5rem;
+    }
+
+    .about-cta-content h2 {
+        font-size: 2rem;
+    }
+
+    .about-cta-content p {
+        font-size: 1rem;
+    }
+
+    .cta-buttons {
+        flex-direction: column;
+        gap: 1rem;
+    }
+
+    .cta-buttons .btn {
+        width: 100%;
+    }
+}
+
+/* ========================================
+   RESPONSIVE - PETITS MOBILES
+   ======================================== */
+
+@media (max-width: 480px) {
+    .about-intro-section,
+    .about-passion-section,
+    .about-values-section,
+    .about-journey-section,
+    .about-hobbies-section,
+    .about-cta-section {
+        padding: 2rem 3%;
+    }
+
+    .about-intro-text h2 {
+        font-size: 1.8rem;
+    }
+
+    .about-profile-img,
+    .values-profile-img {
+        max-width: 250px;
+    }
+
+    .about-image-decoration {
+        top: -15px;
+        left: -15px;
+    }
+
+    .about-intro-image:hover .about-image-decoration {
+        top: -18px;
+        left: -18px;
+    }
+
+    .stat-item {
+        padding: 1rem;
+    }
+
+    .stat-number {
+        font-size: 1.8rem;
+    }
+
+    .stat-label {
+        font-size: 0.85rem;
+    }
+
+    .passion-card h3 {
+        font-size: 1.1rem;
+    }
+
+    .passion-card p {
+        font-size: 0.9rem;
+    }
+
+    .value-item {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .value-icon {
+        font-size: 2.5rem;
+    }
+
+    .journey-profile-img {
+        max-width: 180px;
+    }
+
+    .journey-quote::before {
+        font-size: 3rem;
+    }
+
+    .hobby-emoji {
+        font-size: 2.5rem;
+    }
+
+    .hobby-card h3 {
+        font-size: 1.1rem;
+    }
+
+    .about-cta-content h2 {
+        font-size: 1.8rem;
+    }
+
+    .about-cta-content p {
+        font-size: 0.95rem;
+    }
+}
+
+/* ========================================
+   DARK/LIGHT THEME COMPATIBILITY
+   ======================================== */
+
+[data-theme="light"] .about-image-decoration {
+    border-color: var(--accent);
+}
+
+[data-theme="light"] .journey-quote::before {
+    color: var(--accent);
+}
+
+/* ========================================
+   PRINT STYLES
+   ======================================== */
+
+@media print {
+    .about-intro-section,
+    .about-passion-section,
+    .about-values-section,
+    .about-journey-section,
+    .about-hobbies-section {
+        page-break-inside: avoid;
+    }
+
+    .about-image-decoration {
+        display: none;
+    }
+
+    .about-cta-section {
+        display: none;
+    }
+}
+
+/* ========================================
+   ACCESSIBILITÉ
+   ======================================== */
+
+.passion-card:focus-within,
+.value-item:focus-within,
+.hobby-card:focus-within {
+    outline: 2px solid var(--accent);
+    outline-offset: 2px;
+}
+
+/* Amélioration de la lisibilité */
+.about-intro-text p,
+.journey-text p,
+.passion-card p,
+.value-text p,
+.hobby-card p {
+    text-align: justify;
+}
+
+@media (max-width: 768px) {
+    .about-intro-text p,
+    .journey-text p,
+    .passion-card p,
+    .value-text p,
+    .hobby-card p {
+        text-align: left;
+    }
+}

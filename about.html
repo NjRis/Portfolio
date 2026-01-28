@@ -1,0 +1,252 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>À Propos - Iris</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="style-enhanced.css">
+    <link rel="stylesheet" href="about.css">
+    <link rel="icon" type="image/png" href="img/head_2.png">
+</head>
+<body>
+    <div class="cursor-dot"></div>
+    <div class="cursor-outline"></div>
+
+    <!-- Progress Indicator -->
+    <div class="scroll-progress"></div>
+
+    <!-- Command Palette -->
+    <div class="command-palette" id="commandPalette">
+        <div class="command-palette-content">
+            <input type="text" id="commandInput" placeholder="Tapez pour rechercher... (⌘K ou Ctrl+K)">
+            <div class="command-results" id="commandResults"></div>
+        </div>
+    </div>
+
+    <nav class="navbar" id="navbar">
+        <div class="logo-container">
+            <a href="index.html" class="logo">Iris.dev</a>
+            <!-- Theme Toggle -->
+            <div class="theme-toggle" id="themeToggle">
+                <svg class="sun-icon" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor">
+                    <circle cx="12" cy="12" r="5"></circle>
+                    <line x1="12" y1="1" x2="12" y2="3"></line>
+                    <line x1="12" y1="21" x2="12" y2="23"></line>
+                    <line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line>
+                    <line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line>
+                    <line x1="1" y1="12" x2="3" y2="12"></line>
+                    <line x1="21" y1="12" x2="23" y2="12"></line>
+                    <line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line>
+                    <line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line>
+                </svg>
+                <svg class="moon-icon" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor">
+                    <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path>
+                </svg>
+            </div>
+        </div>
+
+        <div class="hamburger" id="hamburger">
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
+        <ul class="nav-links" id="navLinks">
+            <li><a href="index.html">Accueil</a></li>
+            <li><a href="about.html" class="active">À Propos</a></li>
+            <li><a href="projects.html">Projets</a></li>
+            <li><a href="skills.html">Compétences</a></li>
+            <li><a href="timeline.html">Parcours</a></li>
+            <li><a href="techstack.html">Tech Stack</a></li>
+            <li><a href="contact.html">Contact</a></li>
+        </ul>
+    </nav>
+
+    <!--ALERTING-->
+    <div class="stage-alert" id="stageAlert">
+        <div class="stage-alert-content">
+            <span class="alert-icon">ℹ️</span>
+            <div class="alert-text">
+                <strong>Recherche de stage</strong>
+                <p>4-6 mois · Réseaux & Systèmes · Février 2026</p>
+            </div>
+        </div>
+        <button class="alert-close" id="closeAlert">&times;</button>
+    </div>
+    <!--FIN ALERTING-->
+
+    <section class="page-header">
+        <h1>À Propos de Moi</h1>
+        <p>Étudiante passionnée par la technologie et l'innovation</p>
+    </section>
+
+    <!-- Introduction Section -->
+    <section class="about-intro-section">
+        <div class="about-intro-container">
+            <div class="about-intro-image">
+                <img src="img/head_3.png" alt="Iris NJIKAM" class="about-profile-img">
+                <div class="about-image-decoration"></div>
+            </div>
+            <div class="about-intro-text">
+                <h2>👋 Bonjour, je suis Iris !</h2>
+                <p>Étudiante en 3ème année de BUT Informatique, je suis passionnée par le développement web et les infrastructures DevOps. Mon parcours m'a permis de développer une expertise solide en développement FullStack, mais aussi en containerisation, monitoring et automatisation.</p>
+                <p>Ce qui me motive au quotidien ? La résolution de problèmes complexes et l'optimisation de processus. J'adore créer des solutions qui allient performance, scalabilité et élégance technique.</p>
+                <div class="about-stats">
+                    <div class="stat-item">
+                        <span class="stat-number">20+</span>
+                        <span class="stat-label">Projets réalisés</span>
+                    </div>
+                    <div class="stat-item">
+                        <span class="stat-number">3+</span>
+                        <span class="stat-label">Années d'études</span>
+                    </div>
+                    <div class="stat-item">
+                        <span class="stat-number">30+</span>
+                        <span class="stat-label">Technologies maîtrisées</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Passion Section -->
+    <section class="about-passion-section">
+        <h2 class="section-title">💡 Mes Passions</h2>
+        <div class="passion-grid">
+            <div class="passion-card">
+                <div class="passion-icon">🚀</div>
+                <h3>DevOps & Cloud</h3>
+                <p>Je suis fascinée par l'automatisation et l'orchestration d'infrastructures. Mon HomeLab personnel me permet d'expérimenter quotidiennement avec Docker, Kubernetes, Prometheus et Grafana.</p>
+            </div>
+            <div class="passion-card">
+                <div class="passion-icon">💻</div>
+                <h3>Développement FullStack</h3>
+                <p>De l'API REST au front-end responsive, j'aime créer des applications complètes. Spring Boot et Angular sont mes outils de prédilection pour construire des solutions robustes.</p>
+            </div>
+            <div class="passion-card">
+                <div class="passion-icon">📊</div>
+                <h3>Monitoring & Performance</h3>
+                <p>Observer, mesurer, optimiser. J'ai une approche data-driven du développement et j'accorde une grande importance à la performance et à la fiabilité des systèmes.</p>
+            </div>
+            <div class="passion-card">
+                <div class="passion-icon">🎯</div>
+                <h3>Apprentissage Continu</h3>
+                <p>Le monde tech évolue vite, et j'adore ça ! Je suis constamment en veille technologique, toujours prête à apprendre de nouveaux outils et méthodologies.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Values Section -->
+    <section class="about-values-section">
+        <div class="values-container">
+            <div class="values-image">
+                <img src="img/head_5.png" alt="Iris NJIKAM - Valeurs" class="values-profile-img">
+            </div>
+            <div class="values-content">
+                <h2 class="section-title">🎯 Mes Valeurs</h2>
+                <div class="values-list">
+                    <div class="value-item">
+                        <div class="value-icon">✨</div>
+                        <div class="value-text">
+                            <h3>Rigueur et soin</h3>
+                            <p>Je fais de mon mieux pour écrire un code clair, fiable et facile à maintenir. J’accorde beaucoup d’importance à la qualité du travail.</p>
+                        </div>
+                    </div>
+                    <div class="value-item">
+                        <div class="value-icon">🤝</div>
+                        <div class="value-text">
+                            <h3>Collaboration</h3>
+                            <p>Le travail d'équipe et le partage de connaissances sont essentiels. J'aime apprendre des autres et partager mon expertise.</p>
+                        </div>
+                    </div>
+                    <div class="value-item">
+                        <div class="value-icon">🔍</div>
+                        <div class="value-text">
+                            <h3>Curiosité</h3>
+                            <p>Toujours chercher à comprendre le "pourquoi" et le "comment". C'est cette curiosité qui alimente ma progression.</p>
+                        </div>
+                    </div>
+                    <div class="value-item">
+                        <div class="value-icon">💪</div>
+                        <div class="value-text">
+                            <h3>Persévérance</h3>
+                            <p>Les bugs les plus coriaces ne me font pas peur. Je vois chaque problème comme une opportunité d'apprendre.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Journey Section -->
+    <section class="about-journey-section">
+        <h2 class="section-title">🌟 Mon Parcours en Quelques Mots</h2>
+        <div class="journey-content">
+            <div class="journey-text">
+                <p>Mon aventure dans l'informatique a commencé après un Bac STMG option Finance (mention Bien). Ce parcours m'a appris la rigueur et la gestion de projets, des compétences qui me servent encore aujourd'hui.</p>
+                <p>En 2022, j'ai pris un tournant décisif en m'orientant vers le BUT Informatique. C'est là que ma passion pour le code et les infrastructures a vraiment pris vie. Chaque projet, chaque nouvelle technologie découverte renforce ma conviction : c'est dans ce domaine que je veux construire ma carrière.</p>
+                <p>Mon stage chez GardeMaLicorne m'a permis de mettre en pratique mes compétences en développement FullStack sur des projets réels, avec Symfony, SCSS et JavaScript. Cette expérience m'a confirmé mon goût pour le développement web moderne.</p>
+                <p>Aujourd'hui, je cherche à approfondir mes compétences en Réseaux & Systèmes à travers un stage de 4-6 mois. Mon objectif ? Devenir une professionnelle complète, capable d'intervenir aussi bien sur le développement applicatif que sur l'infrastructure sous-jacente.</p>
+            </div>
+            <div class="journey-image">
+                <img src="img/head_4.png" alt="Iris NJIKAM - Parcours" class="journey-profile-img">
+                <div class="journey-quote">
+                    <p>"La technologie évolue, l'apprentissage est constant, et c'est exactement ce que j'aime."</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Hobbies Section -->
+    <section class="about-hobbies-section">
+        <h2 class="section-title">🎨 En Dehors du Code</h2>
+        <div class="hobbies-grid">
+            <div class="hobby-card">
+                <div class="hobby-emoji">🪲</div>
+                <h3>Nature</h3>
+                <p>J’aime passer du temps dans la nature et marcher pendant des heures. Les randonnées me ressourcent.</p>
+            </div>
+            <div class="hobby-card">
+                <div class="hobby-emoji">🏠</div>
+                <h3>HomeLab</h3>
+                <p>Mon homelab personnel où j'expérimente avec de nouvelles technologies sans limite !</p>
+            </div>
+            <div class="hobby-card">
+                <div class="hobby-emoji">📷</div>
+                <h3>Photographie</h3>
+                <p>Passionnée par la photographie argentique, j’aime capturer l’instant avec authenticité. J’explore la lumière, les textures et le grain unique du film pour raconter des histoires visuelles.</p>
+            </div>
+            <div class="hobby-card">
+                <div class="hobby-emoji">🎯</div>
+                <h3>Side Projects</h3>
+                <p>Toujours un ou deux projets perso en cours pour tester de nouvelles idées !</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section class="about-cta-section">
+        <div class="about-cta-content">
+            <h2>Travaillons Ensemble !</h2>
+            <p>Vous avez un projet, une opportunité de stage, ou simplement envie d'échanger autour de la tech ?</p>
+            <div class="cta-buttons">
+                <a href="contact.html" class="btn btn-primary"><span>Me Contacter</span></a>
+                <a href="doc/CV_6.pdf" download class="btn btn-secondary"><span>Télécharger mon CV</span></a>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="footer-content">
+            <p>&copy; 2026 Iris NJIKAM. Développé avec passion pour l'innovation et la technologie.</p>
+            <div class="version-badge" id="versionBadge">
+                <span class="version-icon">🔄</span>
+                <span class="version-text">v2.1.0</span>
+                <span class="version-date">Dernière mise à jour : 25 Jan 2026</span>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
